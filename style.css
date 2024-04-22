@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+header{
+    background-color: blueviolet;
+    min-height: 70px;
+    border-bottom: 3px solid blue;
+    
+}
+ul{
+    list-style-type: none;
+    margin: 1.7em ;
+    padding: 0;
+}
+li{
+    display: inline;
+    padding: 10px;
+}
+.first-header{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul a{
+    font-size: 23px;
+    text-decoration: none;
+    color: blue;
+}
+nav a:hover, 
+nav a:focus{
+    color: antiquewhite;
+}
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+}
+.header-container{
+    position: sticky;
+    top: 0;
+}
+#about{
+    text-align: center;
+    margin: 50px auto 50px;
+    width: 70%;
+    font-size: 25px;
+    color: red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#about h2{
+    color: rgb(111, 62, 160);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px;
+    text-decoration: underline;
+}
+#projects h2, #contact h2{
+        text-align: center;
+        font-size: 35px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        text-decoration: underline;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.project{
+    flex-wrap: wrap;
+    border: none;
+    text-align: center;
+    margin: 50px;
+    background-color: beige;
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+}
+.project h3{
+    font-size: 35px;
+    padding: 15px;
+    font-weight: 600;
+}
+.project p{
+    font-size: 28px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: start;
+}
+.image{
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    line-height: 2px;
+    border: 5px solid saddlebrown;
+    border-radius: 25px;
+    display: block;
+}
+.image:hover{
+    transition: all 2s linear 500ms;
+    transform: rotate(45deg);
+}
+#contact{
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    width: 40%;
+}
+.contact-header{
+    color: rgb(42, 80, 150);
+    margin: 20px;
+}
+.form-container{
+    border-radius: 10px;
+    background-color: #f1ecec;
+    padding: 20px;
+}
+input, textarea{
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    resize: both;
+    background-color: rgb(141, 136, 136);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+textarea{
+    height: 170px;
+}
+input:focus, textarea:focus{
+    width: 100%;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+button{
+  background-color: rgb(51, 86, 150);
+  color: white;
+  padding: 20px 35px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  margin: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+button:hover{
+    text-align: center;
+    background-color: rgb(52, 52, 231);
+    transition: width 2s, ease-in-out 500ms;
+    width: 20%;
+    font-size: 20px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    font-weight: 700;
+}
+.animation{
+    width: 350px;
+    height: 130px;
+    background-image: url(../image/hi-there-banner.jpg) left center;
+    position: relative;
+    animation: example 15s linear 2ms infinite alternate;
+    object-fit: contain; 
+    box-sizing: content-box;
+    overflow: hidden;
+}
+@keyframes example{
+    0% {background-image: url(../image/hi-there-banner.jpg); background-position: -100px; left: 0px; top: 0px;}
+    50%{background-image: url(../image/8037047_orig.gif); background-position: -500px; left: 200px; top: 0px;}
+}
+@media screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .nav-container{
+        text-align: center;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    ul, .first-header{
+        flex-direction: column;
+        font-size: 1em;
+        margin: 0.8em 0;
+    }
+    #about p{
+        font-size: 1.5em;
+    }
+    li{
+        margin: 0.8em 0;
+        display: block;
+        font-size: 0.5em;
+    }
+    .flex-container{
+        font-size: 0.5em;
+        flex-direction: column;
+        margin: 0 30px;
+    }
+    .project{
+        width: 100%;
+    }
+    .project p{
+        display: none;
+    }
+
+    .image{
+        width: 100%;
+    }
+    .col-25, .col-75, button {
+    width: 100%;
+    margin-top: 0;
+  }
+  #contact{
+    width: 100%;
+    padding: 10px;
+  }
+  .animation{
+    width: 48%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+  }
+    }
+    @media screen and (max-width: 900px) {
+        .nav-container{
+            text-align: center;
+            flex-direction: column;
+        }
+        ul, .first-header{
+        flex-direction: column;
+        text-align: center;
+    }
+    li{
+        margin: 0.8em 0;
+    }
+    #about{
+        font-size: 1em;
+        margin: 10px auto;
+    }   
+    }
