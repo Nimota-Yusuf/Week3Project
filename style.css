@@ -195,7 +195,7 @@ footer{
 .animation{
     width: 350px;
     height: 130px;
-    background-image: url(../image/hi-there-banner.jpg) left center;
+    background-image: url(./image/hi-there-banner.jpg) left center;
     position: relative;
     animation: example 15s linear 2ms infinite alternate;
     object-fit: contain; 
@@ -203,8 +203,8 @@ footer{
     overflow: hidden;
 }
 @keyframes example{
-    0% {background-image: url(../image/hi-there-banner.jpg); background-position: -100px; left: 0px; top: 0px;}
-    50%{background-image: url(../image/8037047_orig.gif); background-position: -500px; left: 200px; top: 0px;}
+    0% {background-image: url(./image/hi-there-banner.jpg); background-position: -100px; left: 0px; top: 0px;}
+    50%{background-image: url(./image/8037047_orig.gif); background-position: -500px; left: 200px; top: 0px;}
 }
 @media screen and (max-width: 600px){
     .container{
